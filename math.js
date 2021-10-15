@@ -53,13 +53,22 @@ if (height2 !== 90) {
     console.log(`身長は90cmです`);
 }
 
-
 //AND OR
 
 const signal_1 = "red";
 const signal_2 = "blue";
 
-if (signal_1 === "red" || signal_2 === "yellow") {
+if (signal_1 === "red" && signal_2 === "yellow") {
+    console.log("これはANDです");
+} else {
+    console.log("これはANDではありません");
+}
+
+
+const signal_3 = "red";
+const signal_4 = "blue";
+
+if (signal_3 === "red" || signal_4 === "yellow") {
     console.log("これはANDです");
 } else {
     console.log("これはANDではありません");
@@ -68,7 +77,6 @@ if (signal_1 === "red" || signal_2 === "yellow") {
 //三項演算子
 //ifelse を1文に書く
 //条件　？　真　：　偽
-
 const score = 100;
 
 //100以上ならgood,そうじゃないならnot goodを出す
@@ -89,21 +97,19 @@ const forArray = [100, 200, 300, 1000];
 
 //[100,200,300,400]
 console.log(forArray);
-//for of 1個ずつ取り出す
 
+//for of 1個ずつ取り出す
 for (simple of forArray) {
     //100,200,300,1000
     console.log(simple);
 }
 
 //for文
-
 for (let i = 0; i <= 10; i++) {
     console.log(i);
 }
 
 //switch文
-
 const data = 0;
 
 switch (data) {
@@ -120,3 +126,60 @@ switch (data) {
         console.log("1-3ではないです");
         break;
 }
+
+//組み込み関数とユーザー定義関数
+
+//引数無し
+//アウトプットなし
+function fatComment() {
+    console.log(1);
+}
+
+fatComment();
+
+//引数あり
+//アウトプットなし
+function getString(food) {
+    console.log(`${food}を食べました`);
+}
+
+getString("かぼちゃ");
+
+const comment = "コメント";
+
+function getString2(test_4) {
+    console.log(`${test_4}しました`);
+}
+
+getString2(comment);
+
+
+//引数なし
+//アウトプット戻り値あり
+function getNumberOfComment() {
+    return 5;
+}
+
+//-------画面上に表示するconsole.logはないのでここでは答えが出ない-----------
+//実際に実行すると5が返ってきているので値が見れる。
+getNumberOfComment();
+
+//consoleで実行結果が見れる
+console.log(getNumberOfComment());
+
+const NumberOfComment = getNumberOfComment();
+
+console.log(NumberOfComment);
+
+//インプット２つ
+//アウトプットもあり
+
+function testSum(int1, int2) {
+
+    let3 = int1 + int2;
+    //returnを返さないとundefinedとなる。
+    return let3;
+}
+
+const testInt = testSum(29, 51);
+console.log(testInt);
