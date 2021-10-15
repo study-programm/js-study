@@ -28,11 +28,10 @@ if (signal === "red") {
     console.log("すすめ");
 }
 
-
 const speed = 60;
 
 /*信号が青の時に60以上スピードが出ているときにスピード違反
-ネストはわかりづらくなるのでなるべくしない模範例*/
+ネストはわかりづらくなるだけなのでなるべくしない模範例*/
 if (signal === "blue") {
     if (speed >= 60) {
         console.log("スピード違反");
@@ -40,7 +39,65 @@ if (signal === "blue") {
         if (speed >= 60) {
             console.log("危ない");
         } else {
-            
+            console.log
         }
     }
+}
+
+const height2 = "90";
+
+//===は型があっているかどうかまでみてくれるので、基本的に==は使わない
+if (height2 !== 90) {
+    console.log(`身長は${height2}以外です`);
+} else {
+    console.log(`身長は90cmです`);
+}
+
+
+//AND OR
+
+const signal_1 = "red";
+const signal_2 = "blue";
+
+if (signal_1 === "red" || signal_2 === "yellow") {
+    console.log("これはANDです");
+} else {
+    console.log("これはANDではありません");
+}
+
+//三項演算子
+//ifelse を1文に書く
+//条件　？　真　：　偽
+
+const score = 100;
+
+//100以上ならgood,そうじゃないならnot goodを出す
+const stage = score > 100 ? "good" : "not good";
+
+console.log(stage);
+
+
+/*繰り返し
+//for　繰り返しの回数を指定
+//for in　あまり使わない
+//for of (ES6) 使いやすい
+*/
+
+//通常
+
+const forArray = [100, 200, 300, 1000];
+
+//[100,200,300,400]
+console.log(forArray);
+//for of 1個ずつ取り出す
+
+for (simple of forArray) {
+    //100,200,300,1000
+    console.log(simple);
+}
+
+//for文
+
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
 }

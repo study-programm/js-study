@@ -52,6 +52,7 @@ const member_3 = {
         }
     }
 }
-
+//ブラケット記法
 console.log(member_3["kumi2"]["syume"]["like"]);
+//ドット記法
 console.log(member_3.kumi1.kurimatu.dislike);
