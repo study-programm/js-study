@@ -154,8 +154,7 @@ function getString2(test_4) {
 getString2(comment);
 
 
-//引数なし
-//アウトプット戻り値あり
+//引数なし　アウトプット戻り値あり
 function getNumberOfComment() {
     return 5;
 }
@@ -171,8 +170,7 @@ const NumberOfComment = getNumberOfComment();
 
 console.log(NumberOfComment);
 
-//インプット２つ
-//アウトプットもあり
+//インプット２つ　アウトプットもあり
 
 function testSum(int1, int2) {
 
@@ -183,3 +181,4 @@ function testSum(int1, int2) {
 
 const testInt = testSum(29, 51);
 console.log(testInt);
+
