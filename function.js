@@ -82,3 +82,24 @@ fruits2.push("きくけこ");
 
 fruits2.forEach(fruity => console.log(fruity));
 
+//Array.filterメソッド　条件に当てはまっているものだけを使う
+const words = ["apple", "banana", "orange", "cherry", "aaa", "aa"];
+
+//5文字以下を取り出す
+const results = words.filter(word => word.length < 5);
+
+console.log(results);
+
+//Array.findメソッド filterと違って最初の値だけを返す。
+const array1 = ["テスト", "て", 300, 4000];
+//最初の2文字以下を取り出す
+const found = array1.find(finds => finds.length < 2);
+console.log(`${found}と表示がされました`);
+
+//Array.map 配列を元に新しい配列を作る
+
+const userList = [10, 200, 300, 400];
+
+const userListMap = userList.map(now => `${now * 2}と表示されました`);
+
+console.log(userListMap);
