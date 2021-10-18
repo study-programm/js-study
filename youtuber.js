@@ -5,17 +5,26 @@
 Youtuber */
 let youtuber = {
 
-    business: [
-        "しまぶー": {
-            "age": 20,
-            "sex": "man",
-            "profession": "Engineer"
-        },
+    business: {
+        youtuber: [
+            {
+                age: 20,
+                sex: "man",
+                profession: "Engineer"
+            }
+        ],
         "あっちゃん": {
             profession: "actor"
         }
-    ],
+    },
+    entertainment:{
+        youtuber : [
+        {
+            name : "atsuhiko",
+            
+        }
+        ]
+    }
 
-    
 }
 console.log(youtuber["business"]["しまぶー"])
