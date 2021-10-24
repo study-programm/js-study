@@ -70,3 +70,48 @@ const isTweetablew = function (text) {
 //     //コールバック関数
 // }
 
+function bring(food) {
+}
+
+function peer(food) {
+}
+
+function cut(food) {
+}
+
+// function washed(fn,food) {
+//     if (/*手洗いが終えたら */) {
+//         //食材の皮をむく処理
+//         fn();
+//     }
+// }
+
+// washed(cut,"carrot");
+
+//実践的な例
+
+function unfollow() {
+    console.log("フォローを外しました");
+}
+
+const cancelTweet = function () {
+    console.log("ツイートをキャンセルしました");
+}
+
+// function confirmed(fn) {
+//     const input = window.prompt("実行しますか？");
+//     if (input === "実行") {
+//         fn();
+//     }
+// }
+
+// confirmed(cancelTweet);
+
+// confirmed(function () {
+//     console.log("リポジトリを削除");
+// });
+
+
+for (let i = "#"; i.length < 8; i += "#") {
+    console.log(i);
+}
