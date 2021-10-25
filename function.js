@@ -111,7 +111,33 @@ const cancelTweet = function () {
 //     console.log("リポジトリを削除");
 // });
 
-
+//#三角形作り
 for (let i = "#"; i.length < 8; i += "#") {
     console.log(i);
 }
+
+//fizzbazz問題
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 15 === 0) {
+        console.log("FizzBuzz");
+    }
+    else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
+
+let x = 10;
+if (true) {
+    let y = 20;
+    var z = 30;
+    console.log(x + y + z);
+    // 60
+}
+//letはブロックスコープが効くので外で取り出しても反応がない
+
+console.log(x + z);
