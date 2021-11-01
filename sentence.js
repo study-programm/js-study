@@ -103,10 +103,126 @@ for (let i = 0; i < numberArray.length + 1; i++) {
     if (num % 2 === 0) {
         console.log(num);
         break;
+    } else {
+        continue;
     }
 }
+
+//filterメソッドは新しい配列を作る
+function filterFunc(num) {
+    return num % 2 === 0;
+}
+
+const numFunc = [1, 2, 3, 4];
+
+//numFunc配列にfilterFunc関数を入れて新しい配列を作る
+console.log(numFunc.filter(filterFunc));
+//[2,4]
+
 
 const array4 = [1, 2, 3, 4, 5];
 
 //someメソッドで全部に対して条件式を投げてfalseかtrueを取得する
 array4.some(value => console.log(value % 2 === 0));
+
+
+const obje = {
+    "a": 1,
+    "b": 2,
+    "c": 3,
+};
+
+for (keys in obje) {
+    const value = obje[keys];
+    console.log(`key:${keys},value:${value}`);
+}
+
+//Object.keyメソッドを使って取り出す方法
+
+const obje2 = {
+    "a": 1,
+    "b": 2,
+    "c": 3
+}
+
+Object.keys(obje2).forEach(objeChild => {
+    const keys = obje2[objeChild];
+    console.log(keys);
+});
+
+//オブジェクト作成
+const obj2 = {
+    key: "value",
+};
+
+const name = "名前";
+
+const obj3 = {
+    name: name
+};
+
+console.log(obj3);
+
+const age = 14;
+
+const ageobj = {
+    age
+};
+
+console.log(ageobj);
+
+const obj4 = new Object();
+
+obj4.keys = "valueです"
+
+console.log(obj4);
+
+//基本的にはドット記法で変数を扱うときはブラケット記法
+
+const languages = {
+    ja: "日本",
+    en: "英語"
+};
+
+const { ja, en } = languages;
+
+console.log(ja);
+console.log(en);
+
+const key = "key-string";
+
+const obj5 = {
+    [key]: "value"
+};
+
+console.log(obj5[key]);
+
+//プロパティを初期化時以外に追加すると分かりにくくなるので駄目なコード
+function changeproperty(obj6) {
+    obj6.key = "value";
+}
+const obj6 = {};
+changeproperty(obj6);
+console.log(obj6.key);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
